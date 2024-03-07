@@ -6,23 +6,24 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
         <link href="styles.css" rel="stylesheet">
         <title>Gallery</title>
-    </head>
 
     <script>
         function ShowButtons(event)
         {
             var buttons = event.target.parentElement.querySelector('.buttons');
-            var images = event.target.parentElement.querySelector('img');
+            var img = event.target.parentElement.querySelector('img');
+            var desc = event.target.parentElement.querySelector('desc');
             buttons.style.display = "flex";
-            images.style.filter = "grayscale(100%)";
+            img.style.filter = "grayscale(100%)";
         }
 
         function HideButtons(event)
         {
             var buttons = event.target.parentElement.querySelector('.buttons');
-            var images = event.target.parentElement.querySelector('img');
+            var img = event.target.parentElement.querySelector('img');
+            var desc = event.target.parentElement.querySelector('desc');
             buttons.style.display = "none";
-            images.style.filter = "grayscale(0%)";
+            img.style.filter = "grayscale(0%)";
         }
 
         function View(event)
@@ -46,6 +47,7 @@
             document.body.removeChild(link);
         }
     </script>
+    </head>
 
     <body>
         <ul>
@@ -55,104 +57,98 @@
             <li><a href="about.html">About</a></li>
         </ul>
         <div class="gallery">
-
-
             <div class="item">
-
                 <div class="imagebutton" onmouseenter="ShowButtons(event)" onmouseleave="HideButtons(event)">
-
-                    <img src="images/img1.jpg" alt="Cinque Terre" width="600" height="400">
+                    <img src="images/img1.jpg" alt="Mayrhofen" width="600" height="400">
                     <div class="buttons">
                         <button class="button" onclick="View(event)">View</button>
                         <button class="button" onclick="Download(event)">Download</button>
                     </div>
                 </div>
-                
-                <div class="desc">Add a description of the image here</div>
-
-            </div>
-
-
-            <div class="item">
-                <div class="imagebutton" onmouseenter="ShowButtons(event)" onmouseleave="HideButtons(event)">
-                    <img src="images/img2.jpg" alt="Cinque Terre" width="600" height="400">
-                    <div class="buttons">
-                        <button class="button" onclick="View(event)">View</button>
-                        <button class="button" onclick="Download(event)">Download</button>
-                    </div>
-                </div>
-                <div class="desc">Add a description of the image here</div>
+                <div class="desc">Mayrhofen</div>
             </div>
             <div class="item">
                 <div class="imagebutton" onmouseenter="ShowButtons(event)" onmouseleave="HideButtons(event)">
-                    <img src="images/img3.jpg" alt="Cinque Terre" width="600" height="400">
+                    <img src="images/img2.jpg" alt="Finkenberg" width="600" height="400">
                     <div class="buttons">
                         <button class="button" onclick="View(event)">View</button>
                         <button class="button" onclick="Download(event)">Download</button>
                     </div>
                 </div>
-                <div class="desc">Add a description of the image here</div>
+                <div class="desc">Astegg, Finkenberg</div>
             </div>
             <div class="item">
                 <div class="imagebutton" onmouseenter="ShowButtons(event)" onmouseleave="HideButtons(event)">
-                    <img src="images/img4.jpg" alt="Cinque Terre" width="600" height="400">
+                    <img src="images/img3.jpg" alt="Finkenberg" width="600" height="400">
                     <div class="buttons">
                         <button class="button" onclick="View(event)">View</button>
                         <button class="button" onclick="Download(event)">Download</button>
                     </div>
                 </div>
-                <div class="desc">Add a description of the image here</div>
+                <div class="desc">Astegg, Finkenberg</div>
             </div>
             <div class="item">
                 <div class="imagebutton" onmouseenter="ShowButtons(event)" onmouseleave="HideButtons(event)">
-                    <img src="images/img5.jpg" alt="Cinque Terre" width="600" height="400">
+                    <img src="images/img4.jpg" alt="Finkenberg" width="600" height="400">
                     <div class="buttons">
                         <button class="button" onclick="View(event)">View</button>
                         <button class="button" onclick="Download(event)">Download</button>
                     </div>
                 </div>
-                <div class="desc">Add a description of the image here</div>
+                <div class="desc">Friedhofsbrücke, Finkenberg</div>
             </div>
             <div class="item">
                 <div class="imagebutton" onmouseenter="ShowButtons(event)" onmouseleave="HideButtons(event)">
-                    <img src="images/img6.jpg" alt="Cinque Terre" width="600" height="400">
+                    <img src="images/img5.jpg" alt="Finkenberg" width="600" height="400">
                     <div class="buttons">
                         <button class="button" onclick="View(event)">View</button>
                         <button class="button" onclick="Download(event)">Download</button>
                     </div>
                 </div>
-                <div class="desc">Add a description of the image here</div>
+                <div class="desc">Friedhofsbrücke, Finkenberg</div>
             </div>
             <div class="item">
                 <div class="imagebutton" onmouseenter="ShowButtons(event)" onmouseleave="HideButtons(event)">
-                    <img src="images/img7.jpg" alt="Cinque Terre" width="600" height="400">
+                    <img src="images/img6.jpg" alt="Finkenberg" width="600" height="400">
                     <div class="buttons">
                         <button class="button" onclick="View(event)">View</button>
                         <button class="button" onclick="Download(event)">Download</button>
                     </div>
                 </div>
-                <div class="desc">Add a description of the image here</div>
+                <div class="desc">Teufelsbrücke, Finkenberg</div>
             </div>
             <div class="item">
                 <div class="imagebutton" onmouseenter="ShowButtons(event)" onmouseleave="HideButtons(event)">
-                    <img src="images/img8.jpg" alt="Cinque Terre" width="600" height="400">
+                    <img src="images/img7.jpg" alt="Finkenberg" width="600" height="400">
                     <div class="buttons">
                         <button class="button" onclick="View(event)">View</button>
                         <button class="button" onclick="Download(event)">Download</button>
                     </div>
                 </div>
-                <div class="desc">Add a description of the image here</div>
+                <div class="desc">Astegg, Finkenberg</div>
             </div>
             <div class="item">
                 <div class="imagebutton" onmouseenter="ShowButtons(event)" onmouseleave="HideButtons(event)">
-                    <img src="images/img9.jpg" alt="Cinque Terre" width="600" height="400">
+                    <img src="images/img8.jpg" alt="Mayrhofen" width="600" height="400">
                     <div class="buttons">
                         <button class="button" onclick="View(event)">View</button>
                         <button class="button" onclick="Download(event)">Download</button>
                     </div>
                 </div>
-                <div class="desc">Add a description of the image here</div>
+                <div class="desc">Mayrhofen</div>
+            </div>
+            <div class="item">
+                <div class="imagebutton" onmouseenter="ShowButtons(event)" onmouseleave="HideButtons(event)">
+                    <img src="images/img9.jpg" alt="Mayrhofen" width="600" height="400">
+                    <div class="buttons">
+                        <button class="button" onclick="View(event)">View</button>
+                        <button class="button" onclick="Download(event)">Download</button>
+                    </div>
+                </div>
+                <div class="desc">Mayrhofen</div>
             </div>
         </div>
-    </div>
+    <footer>
+        made by <b>sdmnk</b>
+    </footer>
 </html>
